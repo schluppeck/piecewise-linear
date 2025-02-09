@@ -13,6 +13,14 @@ use a piecewise linear model to find the change in data at some transition point
 
 in `pwFunction()` I use the convention `x = [m1, m2, k, c1]` where `m1` and `m2` are the slopes of the two lines, `k` is the transition point and `c1` is the y-intercept of the first line.
 
+
+$$
+y(t) = \begin{cases}
+  m_1t+c_1  & t < k  \text{ , where}\, k \text{ is the knot point}   \\
+  m_2t + k(m_1-m_2) + c_1 & t \ge k 
+\end{cases}
+$$
+
 ![](./low-noise-case.png)
 
 and with a bit more noise
