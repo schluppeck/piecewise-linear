@@ -1,5 +1,10 @@
 # piecewise-linear
 
+<!-- MathJax -->
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 find change in data / transition in piece-wise linear data (KW's thesis corrections)
 
 ds, 2025-06-09
