@@ -34,6 +34,8 @@ and with a bit more noise
 
 ## Notes
 
+The code is in the [github repository `piecewise-linear`](https://github.com/schluppeck/piecewise-linear).
+
 The intercept of the second line segment depends on the parameters of the first  and the gradient of the second. Can figure this out with a bit of algebra.
 
 ![](./find-c2-param.png)
