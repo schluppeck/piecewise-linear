@@ -39,3 +39,14 @@ The code is in the [github repository `piecewise-linear`](https://github.com/sch
 The intercept of the second line segment depends on the parameters of the first  and the gradient of the second. Can figure this out with a bit of algebra.
 
 ![](./find-c2-param.png)
+
+## Establishing significance of changes
+
+- use piece-wise linear model to get find a knot point and then look at the two portions to establish regression weights and confidence intervals... that allows you to look at the gradients of the line segments and their CIs to check if they are different -- a good starting point would be: if CIs overlap, then you can't exlude the intepretation that there is **no** change.
+
+![with linear regression](./using_linregress_intervals.png)
+
+
+- other option is to look at the output from `findchangepts()` and compare the residual error to the variance of the data
+
+![with findchangepts()](./using_findchangepts.png)
